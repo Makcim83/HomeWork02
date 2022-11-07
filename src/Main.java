@@ -53,5 +53,15 @@ public class Main {
         System.out.println("Difference boxers weight is " + differenceWeight + " kg (2%1)");
         differenceWeight = max(firstBoxerWeight, secondBoxerWeight) % min(firstBoxerWeight, secondBoxerWeight);
         System.out.println("Difference boxers weight is " + differenceWeight + " kg (max%min)");
+        //WomeWork Part 8
+        var hoursUntilCompletion = 640;
+        var workHoursInDay = 8;
+        int workersInCompany = hoursUntilCompletion / workHoursInDay;
+        System.out.println(workersInCompany + " работников смогут выполнить объем работ в размее " + hoursUntilCompletion + " часов в течение однго рабочего дня");
+        var addedWorkers = 94;
+        workersInCompany += addedWorkers;
+        hoursUntilCompletion = workersInCompany * workHoursInDay;
+        System.out.println("Если в компании работает " + workersInCompany + " челоек, то всего " + hoursUntilCompletion + " часов работы может быть выполнено в течение рабочего дня");
+
     }
 }
